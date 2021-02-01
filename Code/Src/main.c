@@ -1,9 +1,11 @@
 #include "main.h"
 #include "plus.h"
 #include "plus1.h"
+#include <stdio.h>
 
 /* test 1 */
 int main(void){
-	int result = 1;
+    printf("haha");
+    exit(0);
     return 0;
 }

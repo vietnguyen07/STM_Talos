@@ -1,5 +1,6 @@
 define get_all_folders
   dirs:=$$(sort $$(dir $$(wildcard $(1)/*/.)))
+  dirs:=$$(filter-out $(.),$$(dirs))
   ifneq ($$(dirs),)
       $$(foreach subdir,$$(dirs),\
           $$(eval $(2)+=$$(subdir))\
