@@ -5,6 +5,9 @@
 extern "C" {
 #endif
 
+int main(void);
+
+void SystemInit(void);
 
 
 #ifdef __cplusplus
